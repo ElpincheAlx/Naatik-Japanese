@@ -1,0 +1,9 @@
+schema = 1
+
+[repository]
+id = "naatik-japanese"
+display_name = "Na'atik Japanese Language Repository"
+description = "Curated Na'atik packages and approved resources for Japanese language support."
+
+[metadata]
+maintainer = "Alx Hndz"
