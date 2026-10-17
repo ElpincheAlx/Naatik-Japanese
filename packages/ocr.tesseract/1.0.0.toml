@@ -1,0 +1,20 @@
+schema = 1
+
+[id]
+name = "ocr.tesseract"
+version = "1.0.0"
+
+[package]
+type = "ocr"
+
+[compatibility]
+core = "1.0.0"
+
+[source]
+package = "ocr.tesseract-1.0.0-linux-amd64.npkg"
+sha256 = "fcb9dd5997df512d7b4835536090680f50ce1232bfe1969a1608eb5d53963350"
+size = 2435778
+
+[metadata]
+display_name = "Tesseract OCR adapter (Linux amd64)"
+description = "Na'atik adapter only. Requires external Tesseract, jpn and jpn_vert; no engine or language data bundled."

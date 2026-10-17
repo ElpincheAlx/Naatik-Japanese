@@ -31,3 +31,31 @@ Packages must not contain arbitrary installer shell commands or untrusted
 post-install scripts. Do not add such commands to manifests. Preserve executable
 containment, archive safety, explicit permissions and fail-closed isolation.
 No automatic unsandboxed execution or silent provider fallback is permitted.
+
+## PR-0139 Stage 3 — actual first-party adapter artifact
+
+`ocr.tesseract@1.0.0`, Core 1.0.0, Linux amd64, CGO disabled. Publisher:
+Na'atik / Alx Hndz. First-party license: PolyForm-Noncommercial-1.0.0.
+Artifact `ocr.tesseract-1.0.0-linux-amd64.npkg`; SHA-256 `fcb9dd5997df512d7b4835536090680f50ce1232bfe1969a1608eb5d53963350`;
+2435778 bytes. Exact members, binary hash, toolchain, source-file hashes and build
+flags are recorded in `packages/ocr.tesseract/PROVENANCE.json` and the artifact's
+`payload/BUILD-PROVENANCE.json`. The source is the sibling Na'atik checkout at
+base `b7880e3ca26fe1c09075060f09eea2a03c758759` plus the recorded Stage 3 snapshot; the build-time record does not invent
+a committed/published revision.
+
+The genuine executable uses the audited internal provider implementation and
+is built from the dedicated production command. The public reference example
+remains standalone and uses public contracts only.
+Only the Na'atik adapter and its required license/provenance material are
+packaged. The binary links the Go runtime/standard library and
+`golang.org/x/text@v0.28.0` (BSD-3-Clause); complete license/patent notices
+are included. No external engine, model or dictionary is acquired or
+redistributed. Tesseract, jpn and jpn_vert remain external system requirements;
+JMdict and KANJIDIC are not included.
+
+Archive/schema/checksum/size/readers and temporary local Package Manager install
+PASS. Subsequent user-supplied external validation also passed real localhost
+HTTP discovery, remote download/SHA-256/install/reload and normal isolated
+Japanese horizontal/vertical OCR preflight and smoke recognition. Full/race/diff
+gates and manual GTK/X11 validation passed without sandbox workarounds. This
+qualified catalog is not a public release; no official hosting URL is assigned.
