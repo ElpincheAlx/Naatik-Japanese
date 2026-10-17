@@ -1,0 +1,73 @@
+{
+  "also_not_bundled": [
+    "JMdict",
+    "KANJIDIC"
+  ],
+  "architecture": "amd64",
+  "artifact": "ocr.tesseract-1.0.0-linux-amd64.npkg",
+  "artifact_bytes": 2435778,
+  "artifact_sha256": "fcb9dd5997df512d7b4835536090680f50ce1232bfe1969a1608eb5d53963350",
+  "binary_sha256": "e20b86ad2ed53344f997df00fe17c41bf54156ee08217941a0a7f12c589d54aa",
+  "build": "CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -trimpath -buildvcs=false -ldflags=-buildid= ./cmd/ocr-tesseract-provider",
+  "contents": [
+    "bin/ocr-tesseract-provider",
+    "naatik.toml",
+    "payload/BUILD-PROVENANCE.json",
+    "payload/LICENSE",
+    "payload/THIRD_PARTY_NOTICES.md",
+    "payload/licenses/Go-LICENSE",
+    "payload/licenses/Go-PATENTS",
+    "payload/licenses/x-text-LICENSE",
+    "payload/licenses/x-text-PATENTS"
+  ],
+  "core": "1.0.0",
+  "external_requirements_not_bundled": [
+    "Tesseract",
+    "jpn.traineddata",
+    "jpn_vert.traineddata"
+  ],
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "linked_dependency": {
+    "golang.org/x/text": "v0.28.0"
+  },
+  "package_id": "ocr.tesseract",
+  "platform": "linux",
+  "publisher": "Alx Hndz / Na'atik",
+  "qualification": "Format, checksum, manifest and reader validated; normal isolated HTTP-install/OCR validation must be run separately. No public hosting URL assigned.",
+  "source_base": "b7880e3ca26fe1c09075060f09eea2a03c758759",
+  "source_files": {
+    "cmd/ocr-tesseract-provider/main.go": "001256f182b10b1c9fa1faf4864fa83d90abb81b012b50a7c6bac65b59ce1b7b",
+    "go.mod": "a8836bb9264898f2bde15d1448e6b27aa4e9a87c190afa472caa93ef0fd66748",
+    "go.sum": "3d99f81c1363a2014a4a20ca8ac6290ebf1201dbe6a6f32b1fcd5394a9b756ef",
+    "internal/tesseractprovider/provider.go": "040bf34866f69fb74ce1fcd29561131ad1637d8851c03f85a46a98bd1d6c7f14",
+    "pkg/language/analysis.go": "4a77b42667d739874ccf2294805a33e039fb31de4fbc02a17176ff165dd53d25",
+    "pkg/language/analysis_service.go": "599d23e747e51095b6d022ff362c19a967b01a1952faf976597df16c66ad96c4",
+    "pkg/language/dictionary.go": "433ed054b97ea8b10000b305ea0bb4896e01a21339711a7a660cce6bada0815f",
+    "pkg/language/dictionary_service.go": "0f5d959b22c24130f01f977dd8ec49e7419d1ff886092381bb3a49d0df3b9a57",
+    "pkg/language/doc.go": "398b7272f4425f42d82949a8a524f2f842822d7ce630c2c3be61bcaa70c8b379",
+    "pkg/language/errors.go": "0a55ab0d5277f926948c0c04451e7c3db7c5939f7ada565e63c1af00b36a4427",
+    "pkg/language/grammar.go": "96a790b37e9452677acc9d79e94b67f4e6860fc61d0a2567e8e05110138415bb",
+    "pkg/language/grammar_service.go": "d9835ac9fd6afdd0cdfa99f37f7184a0ec6a60c26ab32c99bb2b20137e34a4b7",
+    "pkg/language/normalize.go": "4e913ce6074e7adfed44d2d7c9d58e8cba15e07d70233d21d1852781bfd7675c",
+    "pkg/language/ocr.go": "8349012f10c69e3e7e3607b68f63c4b70c59674ff8f8b6a62931445e52ab868e",
+    "pkg/language/ocr_service.go": "8fe650eb23a913d12e03fadc604e9a0e5dbb98223884ee296ffad860f0088b56",
+    "pkg/language/registry.go": "8bb4a41ae155772717ca0e5c3f31f1ed47677437eff1785b9d07237796311282",
+    "pkg/language/speech.go": "dba2fe5d2b59251fb26401dc6432f2fc385984872ad817039fe3bfbd421ed5b5",
+    "pkg/language/speech_service.go": "d356f7a1d98af49fd567484813d549397d338ee4c8dd65339436a3e17c215bbd",
+    "pkg/language/types.go": "ffd06cc7eda69337d60bf9e404db2a1e656cc7e517d9d3f505fc5168b8c6803b",
+    "pkg/language/version.go": "0fd4e6c543bb21e84128fabaf9b50004e06d1311ecba92428f00bbe390b86fd9",
+    "pkg/language/writing.go": "407524761a5cabc79d08a0736702063b9a96b9245f43bfac63c3f3c6797a79b4",
+    "pkg/language/writing_service.go": "1ba1ebac1da195dcf32f32a704c24b26eb2b45b4629d6fddb21dc63dbb36526f",
+    "pkg/naatik/context.go": "d646a53c7990d667a50fb200f99c31ecf05db455e3091141264221db2a341cec",
+    "pkg/naatik/doc.go": "829ca6274ad60a140ad58f2c2accb93e0b1578ae1b7919c70ea84adfd77b7fe7",
+    "pkg/naatik/events.go": "b50b4e77392b3f61cbed44196b66521cc439530c37825e7cbcc9b422feb68cb5",
+    "pkg/naatik/extension.go": "bd0e3e73d9eaf16a5e83017efd5e38e827b7a2c3bdcd02b4920f82077d08631d",
+    "pkg/naatik/logger.go": "a3b3c21f5125a655f6a210f4227512dcbb2ba3285593f928139a652ea29f33a8",
+    "pkg/naatik/metadata.go": "5a47dff4021d14d6f94dbd45dbb6179fbed0cb4c34803e925897923cf83f4546",
+    "pkg/naatik/services.go": "0fde94fc61e3dd10f90e5c0603c1dea74e6ee75871b76bbdfed2c39e6c3b08a0",
+    "pkg/naatik/version.go": "f11fd87bfafbf2d35daea9a63d2139d7e5387391573ebef42b4ad8ee271d7cbd"
+  },
+  "source_snapshot_sha256": "47a5cb84d1ea43f16de9e26f59e332374c3cc4148bf39729a176035550c9c196",
+  "toolchain": "go version go1.26.9-X:nodwarf5 linux/amd64",
+  "version": "1.0.0"
+}
