@@ -1,8 +1,19 @@
 # Na'atik Japanese Language Repository
 
-This branch prepares the first genuine Na'atik-owned OCR adapter package. It is
-not publicly hosted or released. External normal HTTP-install and isolated
-Japanese horizontal/vertical OCR qualification passed, as supplied by the user.
+Published official Na'atik language catalog with the genuine Na'atik-owned OCR
+adapter `ocr.tesseract@1.0.0` for Linux amd64. PR-0139 Stage 4B public
+HTTP/download/SHA-256/install/reload and isolated Japanese horizontal/vertical
+OCR passed in external validation supplied by the user. Public catalog hosting
+is distinct from a GitHub Release or a new Na'atik application release.
+
+Canonical static catalog base:
+https://raw.githubusercontent.com/ElpincheAlx/Naatik-Japanese/main/
+
+Use Na'atik **Configuración guiada → Japonés → Agregar repositorio / Instalar
+adaptador**, or review **Instalar recomendado**. The engine and traineddata
+remain separate system requirements. Do not add the GitHub HTML source URL as
+a static catalog base. New local documentation commits are not public until
+separately reviewed/merged/pushed; this preparation publishes nothing.
 
 ## Prepared adapter
 
@@ -53,8 +64,9 @@ normal-provider preflight. Host detection alone never makes Japanese OCR Ready.
 
 ## Repository format and qualification
 
-`repository.toml` retains identity `naatik-japanese` and has no invented public
-URL. `packages/index.txt` lists the real existing `ocr.tesseract/1.0.0.toml`, whose
+`repository.toml` retains identity `naatik-japanese`. Its catalog base is
+maintained centrally by Na'atik; no schema or repository identity changes.
+`packages/index.txt` lists the real existing `ocr.tesseract/1.0.0.toml`, whose
 artifact SHA-256 and byte size are computed from the actual file. No unsupported
 platform/provenance keys were added to the existing TOML schemas.
 
@@ -72,7 +84,9 @@ preflight was ready; smoke recognition returned `日本語の文字` and `日 �
 Manual GTK/X11 validation and full/race/diff gates also passed. No sandbox
 workaround, fallback or broad filesystem permission was needed. These external
 results supersede the earlier pending qualification, not the historical sandbox
-failures. No public hosting/publication or privileged automatic installer is claimed.
+failures. These Stage 3 results preceded public publication; subsequent
+PR-0139 Stage 4B
+validated the public catalog. No privileged automatic installer is provided.
 Horizontal/vertical Japanese smoke images were generated locally from text using
 an installed system font; no sample image was downloaded or bundled.
 
@@ -112,3 +126,13 @@ No new production implementation or resource for those domains is supplied.
 Required Notice: Copyright (c) 2026 Alx Hndz.
 See [LICENSE](LICENSE), [RESOURCE_PROVENANCE.md](RESOURCE_PROVENANCE.md) and
 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+## Current closure boundary
+
+The original artifact, release metadata and immutable PROVENANCE.json remain
+unchanged. This documentation update does not build, publish or replace a
+package. HTTPS plus metadata validation, size and SHA-256 checks are the current
+trust model; package/publisher signatures are not implemented. The public
+catalog previously validated in Stage 4B must be rechecked independently when
+network access is available. First-party material is source-available for
+noncommercial use; third-party rights and notices remain separate.

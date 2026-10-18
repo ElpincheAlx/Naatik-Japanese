@@ -58,4 +58,7 @@ PASS. Subsequent user-supplied external validation also passed real localhost
 HTTP discovery, remote download/SHA-256/install/reload and normal isolated
 Japanese horizontal/vertical OCR preflight and smoke recognition. Full/race/diff
 gates and manual GTK/X11 validation passed without sandbox workarounds. This
-qualified catalog is not a public release; no official hosting URL is assigned.
+qualified catalog was subsequently published and validated in PR-0139 Stage 4B
+at `https://raw.githubusercontent.com/ElpincheAlx/Naatik-Japanese/main/`.
+This is static catalog publication, not a new GitHub Release. The recorded
+artifact and its build-time provenance remain unchanged.
