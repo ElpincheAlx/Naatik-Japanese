@@ -133,6 +133,7 @@ The original artifact, release metadata and immutable PROVENANCE.json remain
 unchanged. This documentation update does not build, publish or replace a
 package. HTTPS plus metadata validation, size and SHA-256 checks are the current
 trust model; package/publisher signatures are not implemented. The public
-catalog previously validated in Stage 4B must be rechecked independently when
-network access is available. First-party material is source-available for
+catalog was checked again during Fedora qualification of Na'atik be8f24c:
+external public discovery/download/SHA/size/install/reload, isolated Japanese OCR
+and second-run idempotency passed (reviewed official-setup.log). First-party material is source-available for
 noncommercial use; third-party rights and notices remain separate.
